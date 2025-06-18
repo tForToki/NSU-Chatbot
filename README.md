@@ -1,2 +1,8 @@
 # NSU-Chatbot
 Here is the repository of the project for CSE299-Junior Project at North South University(NSU). We created a chatbot for NSU Electrical and Computer Engineering(ECE) department. Our chatbot can answer almost everything about ECE department.
+
+This project is an intelligent Retrieval-Augmented Generation (RAG) based chatbot developed for the Department of Electrical and Computer Engineering (ECE) at North South University (NSU). It is designed to assist students, faculty, and visitors by answering queries about the department using accurate, document-grounded information. The system leverages LangChain, ChromaDB, and "meta-llama/Llama-2-7b-chat-hf" language models to build a robust pipeline that retrieves relevant answers from official departmental documents, such as syllabi, course descriptions, and administrative guides.
+
+The data source was a departmental website info text file (extracted_text.txt), parsed and converted into text chunks with metadata for efficient retrieval. Embeddings were generated using "sentence-transformers/all-MiniLM-L12-v2" and stored in ChromaDB for fast semantic search. The chatbot uses LangChain’s ConversationalRetrievalChain to maintain context across multiple queries, offering coherent multi-turn conversations. The interface is built with a clean, student-friendly React-based frontend, featuring predefined question prompts, past query history, and a typewriter effect for dynamic responses.
+
+This chatbot is optimized for question-answering tasks in the academic context and can be further extended to include more NSU-wide resources or integrated into NSU’s official platforms. It showcases a practical application of modern NLP pipelines, vector databases, and real-time user interaction in education.
